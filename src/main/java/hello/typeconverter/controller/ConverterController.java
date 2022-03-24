@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class ConverterController {
 
-    @GetMapping("  ")
+    @GetMapping("converter-view")
     public String converterView(Model model) {
         model.addAttribute("number", 10000);
         model.addAttribute("ipPort", new IpPort("127.0.0.1", 8080));
